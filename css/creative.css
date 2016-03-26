@@ -474,3 +474,12 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-nav li {
+      float: none;
+      display: inline-block;
+  }

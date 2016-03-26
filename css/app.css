@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 html,
 body {
     width: 100%;
@@ -11,7 +5,8 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    /*font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;*/
+    font-family: 'Lato', sans-serif;
 }
 
 hr {
@@ -105,9 +100,18 @@ aside {
     color: #222;
 }
 
+.cloudly-logo-link {
+    border: none;
+}
+
+.cloudly-logo {
+    width: 98px;
+}
+
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
     color: #f05f40;
+
 }
 
 .navbar-default .nav > li.active>a,
@@ -123,8 +127,8 @@ aside {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(255,255,255,.3);
-        background-color: transparent;
+        /*border-color: rgba(255,255,255,.3);*/
+        background-color: rgba(130, 139, 147, 0.44);
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -480,6 +484,25 @@ body {
     text-align: center;
 }
 .navbar-nav li {
-      float: none;
-      display: inline-block;
+    float: none;
+    display: inline-block;
+    padding-top: 6px;
+    padding-bottom: 4px;
   }
+.navbar-nav .social {
+    padding-top: 2px;
+    margin-top: 8px;
+
+}
+.navbar-nav .social li input {
+    background: #BBBDC2;
+    border: none;
+    border-radius: 0;
+    padding: 0px 4px;
+    height: 26px;
+    width: 150px;
+}
+.navbar-nav .social li i {
+    margin-top: -21px;
+    margin-right: 18px;
+}

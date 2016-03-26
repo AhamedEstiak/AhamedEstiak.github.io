@@ -10,6 +10,31 @@
     $('#accordion').on('hidden.bs.collapse', toggleChevron);
     $('#accordion').on('shown.bs.collapse', toggleChevron);
 
+    $(document).ready(function(){
+        //$('.owl-carousel').owlCarousel();
+
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+    });
+
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);

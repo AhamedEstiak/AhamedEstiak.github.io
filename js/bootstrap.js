@@ -76,20 +76,9 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
-/* ========================================================================
- * Bootstrap: alert.js v3.3.6
- * http://getbootstrap.com/javascript/#alerts
- * ========================================================================
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
 
 +function ($) {
   'use strict';
-
-  // ALERT CLASS DEFINITION
-  // ======================
 
   var dismiss = '[data-dismiss="alert"]'
   var Alert   = function (el) {
@@ -170,14 +159,6 @@ if (typeof jQuery === 'undefined') {
   $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close)
 
 }(jQuery);
-
-/* ========================================================================
- * Bootstrap: button.js v3.3.6
- * http://getbootstrap.com/javascript/#buttons
- * ========================================================================
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
 
 
 +function ($) {

@@ -13,14 +13,17 @@
 
     <link rel="stylesheet" href="../../css/bootstrap.min.css" type="text/css">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+          rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css" type="text/css">
 
     <link rel="stylesheet" href="../../css/animate.min.css" type="text/css">
     <link rel="stylesheet" href="../../css/owl.carousel.css" type="text/css">
 
     <link rel="stylesheet" href="../../css/dashboard.css" type="text/css">
+    <link rel="stylesheet" href="../../css/dashboard/courses.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,43 +34,112 @@
 
 </head>
 
-<body id="page-top">
-<div class="header">
-    <a href="#" id="menu-action">
-        <i class="fa fa-bars"></i>
-        <span>Close</span>
-    </a>
-    <div class="logo">
-        Simple Admin
-    </div>
-</div>
-<div class="sidebar">
+<body>
+<div class="area"></div>
+<nav class="main-menu">
     <ul>
-        <li><a href="#"><i class="fa fa-desktop"></i><span>Desktop</span></a></li>
-        <li><a href="#"><i class="fa fa-server"></i><span>Server</span></a></li>
-        <li><a href="#"><i class="fa fa-calendar"></i><span>Calendar</span></a></li>
-        <li><a href="#"><i class="fa fa-envelope-o"></i><span>Messages</span></a></li>
-        <li><a href="#"><i class="fa fa-table"></i><span>Data Table</span></a></li>
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Home.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Dashboard</span>-->
+            </a>
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <span class="badge badge-1">2</span><img src="../../img/photo.png" alt="" style="width: 60px;margin-left: 7px;"/>
+                <br/><span>...</span>
+                <!--<span class="nav-text">UI Components</span>-->
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <img src="../../img/Courses.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Forms</span>-->
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <span class="badge badge-2">9</span><img src="../../img/sidebar-icon/Projects.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Pages</span>-->
+            </a>
+
+        </li>
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Calendar.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Graphs and Statistics</span>-->
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Services.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Typography and Icons</span>-->
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Student.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Tables</span>-->
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Teachers.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Maps</span>-->
+            </a>
+        </li>
     </ul>
-</div>
 
-<!-- Content -->
-<div class="main">
-    <div class="hipsum">
+    <ul class="logout">
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Logout.png" alt=""/><br/>Logout
+                <!--<span class="nav-text">Logout</span>-->
+            </a>
+        </li>
+    </ul>
+</nav>
 
-        <div class="">
-            <h2>Panels with Contextual Classes</h2>
-            <div class="panel-group">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Panel with panel-default class</div>
-                    <div class="panel-body">Panel Content</div>
-                    <hr/>
-                    <div class="panel-body">Panel Content</div>
-                </div>
+<div class="container-fluid hearder-wrapper">
+    <div class="well">
+        <img class="refresh-img" src="../../img/Refresh.png" alt=""/>
+        <button class="btn btn-default">Course Dashboard</button>
+        <a href=""><img class="pull-right cloudly-logo" src="../../img/Cloudly-logo.png" alt=""/></a>
+    </div>
+
+    <div class="nav-tab-wrapper">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">
+                <i class="fa fa-reply"></i>
+                <img src="../../img/Courses.png" alt=""/>
+                Main</a>
+            </li>
+            <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+            <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>HOME</h3>
+
+                <p>Some content.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Menu 1</h3>
+
+                <p>Some content in menu 1.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Menu 2</h3>
+
+                <p>Some content in menu 2.</p>
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- jQuery -->
 <script src="../../js/jquery.js"></script>

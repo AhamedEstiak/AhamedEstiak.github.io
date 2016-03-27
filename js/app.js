@@ -11,31 +11,16 @@
     $('#accordion').on('shown.bs.collapse', toggleChevron);
 
     $(document).ready(function(){
-        //$('.owl-carousel').owlCarousel();
+        $(".owl-demo").owlCarousel({
 
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            responsiveClass:true,
-            responsive:{
-                0:{
-                    items:1,
-                    nav:true
-                },
-                600:{
-                    items:3,
-                    nav:false
-                },
-                1000:{
-                    items:5,
-                    nav:true,
-                    loop:false
-                }
-            }
-        })
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+            items : 2,
+            itemsDesktop : [1199,3],
+            itemsDesktopSmall : [979,3]
+
+        });
     });
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -44,18 +29,15 @@
         event.preventDefault();
     });
 
-    // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
     })
 
-    // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
     });
 
-    // Fit Text Plugin for Main Header
     $("h1").fitText(
         1.2, {
             minFontSize: '35px',
@@ -63,14 +45,12 @@
         }
     );
 
-    // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
             top: 100
         }
     })
 
-    // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
-})(jQuery); // End of use strict
+})(jQuery);

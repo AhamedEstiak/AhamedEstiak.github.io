@@ -311,6 +311,13 @@ p {
     position: relative;
     top: 7px;
 }
+.footer hr {
+    position: relative;
+    left: -40%;
+    border-width: 2px;
+    border-color: #0096D6;
+    opacity: .4;
+}
 .footer .latest-news img {
     width: 55px;
     float: left;
@@ -332,6 +339,15 @@ p {
 }
 .footer .nav-container {
     background: #262626;
+}
+.footer nav li a {
+    text-transform: uppercase;
+    color: #fff;
+    opacity: .4;
+    font-weight: 600;
+}
+.footer nav li a:hover {
+    background-color: transparent;
 }
 .text-faded {
     color: #222;

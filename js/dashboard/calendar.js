@@ -12,19 +12,14 @@ $(document).on('shown.bs.popover', function (ev) {
     }
 });
 
-
-//quicktmpl is a simple template language I threw together a while ago; it is not remotely secure to xss and probably has plenty of bugs that I haven't considered, but it basically works
-//the design is a function I read in a blog post by John Resig (http://ejohn.org/blog/javascript-micro-templating/) and it is intended to be loosely translateable to a more comprehensive template language like mustache easily
 $.extend({
     quicktmpl: function (template) {return new Function("obj","var p=[],print=function(){p.push.apply(p,arguments);};with(obj){p.push('"+template.replace(/[\r\t\n]/g," ").split("{{").join("\t").replace(/((^|\}\})[^\t]*)'/g,"$1\r").replace(/\t:(.*?)\}\}/g,"',$1,'").split("\t").join("');").split("}}").join("p.push('").split("\r").join("\\'")+"');}return p.join('');")}
 });
 
 $.extend(Date.prototype, {
-    //provides a string that is _year_month_day, intended to be widely usable as a css class
     toDateCssClass:  function () {
         return '_' + this.getFullYear() + '_' + (this.getMonth() + 1) + '_' + this.getDate();
     },
-    //this generates a number useful for comparing two dates;
     toDateInt: function () {
         return ((this.getFullYear()*12) + this.getMonth())*32 + this.getDate();
     },
@@ -41,14 +36,11 @@ $.extend(Date.prototype, {
     }
 });
 
-
 (function ($) {
 
-    //t here is a function which gets passed an options object and returns a string of html. I am using quicktmpl to create it based on the template located over in the html block
     var t = $.quicktmpl($('#tmpl').get(0).innerHTML);
 
     function calendar($el, options) {
-        //actions aren't currently in the template, but could be added easily...
         $el.on('click', '.js-cal-prev', function () {
             switch(options.mode) {
                 case 'year': options.date.setFullYear(options.date.getFullYear() - 1); break;
@@ -198,9 +190,7 @@ $.extend(Date.prototype, {
         }
 
         draw();
-    }
-
-    ;(function (defaults, $, window, document) {
+    };(function (defaults, $, window, document) {
         $.extend({
             calendar: function (options) {
                 return $.extend(defaults, options);
@@ -248,7 +238,6 @@ var data = [],
 
 for(i = 0; i < 500; i++) {
     j = Math.max(i % 15 - 10, 0);
-    //c and c1 jump around to provide an illusion of random data
     c = (c * 1063) % 1061;
     c1 = (c1 * 3329) % 3331;
     d = (d1 + c + c1) % 839 - 440;
@@ -261,9 +250,6 @@ for(i = 0; i < 500; i++) {
 
 data.sort(function(a,b) { return (+a.start) - (+b.start); });
 
-//data must be sorted by start date
-
-//Actually do everything
 $('#holder').calendar({
     data: data
 });

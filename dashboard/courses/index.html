@@ -96,7 +96,7 @@
         <li>
             <a href="#">
                 <img src="../../img/sidebar-icon/Logout.png" alt=""/><br/>
-                <span class="logout">Logout</span>
+                <span class="logout" style="font-size: 12px;font-weight: 600;margin-left: 17px;">Logout</span>
                 <!--<span class="nav-text">Logout</span>-->
             </a>
         </li>
@@ -117,22 +117,104 @@
                 <img src="../../img/Courses.png" alt=""/>
                 Main</a>
             </li>
-            <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-            <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+            <li><a data-toggle="tab" href="#menu1">
+                <i class="fa fa-tasks"></i>
+                Status</a>
+            </a></li>
+            <li><a data-toggle="tab" href="#menu2">
+                <i class="fa fa-users"></i>
+                Participants</a>
+            </a></li>
+            <li>
+                <a data-toggle="tab" href="#menu3">
+                <i class="fa fa-cogs"></i>
+                Properties</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#menu4">
+                    <i class="fa fa-cogs"></i>
+                    Course contents</a>
+            </li>
+            <li class="pull-right">
+                <input type="text" placeholder="Search course,tasks etc"/>
+            </li>
         </ul>
 
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
                 <div class="panel panel-default">
                     <div class="panel-body" style="background: #fff">
-                        <h5> ET2435 V12 Lp3 Network Security(campus)</h5>
-                        <div class="panel panel-default custom-panel">
-                            <div class="panel-heading">Panel Heading</div>
-                            <div class="panel-body">Panel Content</div>
+                        <h5 class="page-header h5-style">
+                            <i class="fa fa-list-alt"></i>
+                            ET2435 V12 Lp3 Network Security(campus)
+                        </h5>
+                        <div class="panel panel-default custom-panel custom-panel-1">
+                            <div class="panel-heading">BULLETINS
+                                <div class="pull-right"><i class="fa fa-wifi"></i>Subscribe</div>
+                            </div>
+                            <div class="panel-body panel-body-custom">
+                                <sapn class="span-top">Exam date</sapn>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto atque consequatur ea eaque et fuga, harum id </p>
+                                <div class="profile">
+                                    <p>
+                                        <img src="../../img/photo.png" alt=""/>
+                                        john Doe <span style="color: #999;">| 2016-03-16</span>
+                                        <button class="btn btn-default pull-right">Comment</button>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel-body panel-body-custom">
+                                <sapn class="span-top">Project submission</sapn>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto atque consequatur ea eaque et fuga, harum id </p>
+                                <div class="profile">
+                                    <p>
+                                        <img src="../../img/photo.png" alt=""/>
+                                        john Doe <span style="color: #999;">| 2016-03-16</span>
+                                        <button class="btn btn-default pull-right custom-color-btn">Comment</button>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel-body panel-body-custom">
+                                <sapn class="span-top">Roll call assignment</sapn>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto atque consequatur ea eaque et fuga, harum id </p>
+                                <div class="profile" style="border:none">
+                                    <p>
+                                        <img src="../../img/photo.png" alt=""/>
+                                        john Doe <span style="color: #999;">| 2016-03-16</span>
+                                        <button class="btn btn-default pull-right">Comment</button>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="panel panel-default custom-panel">
-                            <div class="panel-heading">Panel Heading</div>
-                            <div class="panel-body">Panel Content</div>
+                        <div class="custom-panel custom-panel-2">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">TASKS</div>
+                                <div class="panel-body panel-body-custom">
+                                    <div class="button-group">
+                                        <button class="btn btn-default custom-color-btn">Active</button>
+                                        <button class="btn btn-default">Completed</button>
+                                        <button class="btn btn-default">Hidden</button>
+                                    </div>
+                                    <sapn class="span-top">Final Project Report</sapn>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto atque consequatur ea eaque et fuga, harum id </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">FAVOURITES</div>
+                                <div class="panel-body panel-body-custom">
+                                    <p style="font-style: italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto atque consequatur ea eaque et fuga, harum id </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">EVENTS
+                                    <div class="pull-right"><i class="fa fa-wifi"></i>Subscribe</div>
+                                </div>
+                                <div class="panel-body panel-body-custom">
+                                    <p style="font-style: italic">No events
+                                        <button class="btn btn-default custom-color-btn pull-right" style="font-style: normal">Show a calendar</button>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

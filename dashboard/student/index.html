@@ -9,18 +9,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Cloudly</title>
+    <title>Student</title>
 
     <link rel="stylesheet" href="../../css/bootstrap.min.css" type="text/css">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+          rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css" type="text/css">
 
     <link rel="stylesheet" href="../../css/animate.min.css" type="text/css">
     <link rel="stylesheet" href="../../css/owl.carousel.css" type="text/css">
 
     <link rel="stylesheet" href="../../css/dashboard.css" type="text/css">
+    <link rel="stylesheet" href="../../css/dashboard/courses.css" type="text/css">
+    <link rel="stylesheet" href="../../css/dashboard/student.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,43 +35,303 @@
 
 </head>
 
-<body id="page-top">
-<div class="header">
-    <a href="#" id="menu-action">
-        <i class="fa fa-bars"></i>
-        <span>Close</span>
-    </a>
-    <div class="logo">
-        Simple Admin
-    </div>
-</div>
-<div class="sidebar">
+<body>
+<div class="area"></div>
+<nav class="main-menu">
     <ul>
-        <li><a href="#"><i class="fa fa-desktop"></i><span>Desktop</span></a></li>
-        <li><a href="#"><i class="fa fa-server"></i><span>Server</span></a></li>
-        <li><a href="#"><i class="fa fa-calendar"></i><span>Calendar</span></a></li>
-        <li><a href="#"><i class="fa fa-envelope-o"></i><span>Messages</span></a></li>
-        <li><a href="#"><i class="fa fa-table"></i><span>Data Table</span></a></li>
-    </ul>
-</div>
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Home.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Dashboard</span>-->
+            </a>
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <span class="badge badge-1">2</span><img src="../../img/photo.png" alt="" style="width: 60px;margin-left: 7px;"/>
+                <br/><span>...</span>
+                <!--<span class="nav-text">UI Components</span>-->
+            </a>
 
-<!-- Content -->
-<div class="main">
-    <div class="hipsum">
-        <div class="">
-            <h2>Panels with Contextual Classes</h2>
-            <div class="panel-group">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Panel with panel-default class</div>
-                    <div class="panel-body">Panel Content</div>
-                    <hr/>
-                    <div class="panel-body">Panel Content</div>
-                </div>
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <img src="../../img/Courses.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Forms</span>-->
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <span class="badge badge-2">9</span><img src="../../img/sidebar-icon/Projects.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Pages</span>-->
+            </a>
+
+        </li>
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Calendar.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Graphs and Statistics</span>-->
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Services.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Typography and Icons</span>-->
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Student.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Tables</span>-->
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Teachers.png" alt=""/><br/><span>...</span>
+                <!--<span class="nav-text">Maps</span>-->
+            </a>
+        </li>
+    </ul>
+
+    <ul class="logout">
+        <li>
+            <a href="#">
+                <img src="../../img/sidebar-icon/Logout.png" alt=""/><br/>
+                <span class="logout" style="font-size: 12px;font-weight: 600;margin-left: 17px;">Logout</span>
+                <!--<span class="nav-text">Logout</span>-->
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid hearder-wrapper">
+    <div class="well">
+        <img class="refresh-img" src="../../img/Refresh.png" alt=""/>
+        <button class="btn btn-default">Student Dashboard</button>
+        <a class="pull-right" href="">
+            <img class="cloudly-logo" src="../../img/Cloudly-logo.png" alt=""/>
+        </a>
+        <div class="dropdown pull-right">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                <i class="fa fa-comments-o"></i>5 USER ONLINE
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-chevron-circle-down pull-right"></i>
+    </div>
+
+    <div class="nav-tab-wrapper">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">
+                <i class="fa fa-clock-o"></i>
+                My Courses</a>
+            </li>
+            <li><a data-toggle="tab" href="#menu1">
+                <i class="fa fa-paper-plane"></i>
+                Messages</a>
+                </a></li>
+            <li><a data-toggle="tab" href="#menu2">
+                <i class="fa fa-tasks"></i>
+                My Tasks</a>
+                </a></li>
+            <li>
+                <a data-toggle="tab" href="#menu3">
+                    <i class="fa fa-calendar"></i>
+                    My Projects</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#menu4">
+                    <i class="fa fa-info-circle"></i>
+                    Information</a>
+            </li>
+            <li class="pull-right">
+                <input type="text" placeholder="Search course,tasks etc"/>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <ul class="list-group list-group-1">
+                    <li class="list-group-item">
+                        <h5>Site Courses Catelogue
+                            <div class="dropdown pull-right">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                    New Courses(descending)
+                                    <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                </ul>
+                                <img src="../../img/Add.png" alt=""/>
+                            </div>
+                        </h5>
+                    </li>
+                    <li class="list-group-item item-inner">
+                        <button class="btn btn-default btn-75">75%</button>
+                        ET2435 V12 Lp3 Network Security(campus)<br/>
+                        <span class="span-style">16/03/2016</span>
+                        <div class="pull-right">
+                            <button class="btn btn-default">Major</button>
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item item-inner">
+                        <button class="btn btn-default btn-75">75%</button>
+                        ET2435 V12 Lp3 Network Security(campus)<br/>
+                        <span class="span-style">16/03/2016</span>
+                        <div class="pull-right">
+                            <button class="btn btn-default">Major</button>
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item item-inner">
+                        <button class="btn btn-default btn-75">75%</button>
+                        ET2435 V12 Lp3 Network Security(campus)<br/>
+                        <span class="span-style">16/03/2016</span>
+                        <div class="pull-right">
+                            <button class="btn btn-default">Major</button>
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item item-inner">
+                        <button class="btn btn-default btn-75">75%</button>
+                        ET2435 V12 Lp3 Network Security(campus)<br/>
+                        <span class="span-style">16/03/2016</span>
+                        <div class="pull-right">
+                            <button class="btn btn-default">Major</button>
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item item-inner">
+                        <button class="btn btn-default btn-75">75%</button>
+                        ET2435 V12 Lp3 Network Security(campus)<br/>
+                        <span class="span-style">16/03/2016</span>
+                        <div class="pull-right">
+                            <button class="btn btn-default">Major</button>
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item item-inner">
+                        <button class="btn btn-default btn-75">75%</button>
+                        ET2435 V12 Lp3 Network Security(campus)<br/>
+                        <span class="span-style">16/03/2016</span>
+                        <div class="pull-right">
+                            <button class="btn btn-default">Major</button>
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item item-inner">
+                        <button class="btn btn-default btn-75">75%</button>
+                        ET2435 V12 Lp3 Network Security(campus)<br/>
+                        <span class="span-style">16/03/2016</span>
+                        <div class="pull-right">
+                            <button class="btn btn-default">Major</button>
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item item-inner">
+                        <button class="btn btn-default btn-75">75%</button>
+                        ET2435 V12 Lp3 Network Security(campus)<br/>
+                        <span class="span-style">16/03/2016</span>
+                        <div class="pull-right">
+                            <button class="btn btn-default">Major</button>
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item item-inner">
+                        <button class="btn btn-default btn-75">75%</button>
+                        ET2435 V12 Lp3 Network Security(campus)<br/>
+                        <span class="span-style">16/03/2016</span>
+                        <div class="pull-right">
+                            <button class="btn btn-default">Major</button>
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-group list-group-2">
+                    <li class="list-group-item">
+                        <img src="../../img/photo.png" alt=""/>
+                        <p><span>Mark P.</span>add and Image into Worlda <br/>
+                            Today, 10:30 PM
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="../../img/photo.png" alt=""/>
+                        <p><span>Mark P.</span>add and Image into Worlda <br/>
+                            Today, 10:30 PM
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="../../img/photo.png" alt=""/>
+                        <p><span>Mark P.</span>add and Image into Worlda <br/>
+                            Today, 10:30 PM
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="../../img/photo.png" alt=""/>
+                        <p><span>Mark P.</span>add and Image into Worlda <br/>
+                            Today, 10:30 PM
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="../../img/photo.png" alt=""/>
+                        <p><span>Mark P.</span>add and Image into Worlda <br/>
+                            Today, 10:30 PM
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="../../img/photo.png" alt=""/>
+                        <p><span>Mark P.</span>add and Image into Worlda <br/>
+                            Today, 10:30 PM
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="../../img/photo.png" alt=""/>
+                        <p><span>Mark P.</span>add and Image into Worlda <br/>
+                            Today, 10:30 PM
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="../../img/photo.png" alt=""/>
+                        <p><span>Mark P.</span>add and Image into Worlda <br/>
+                            Today, 10:30 PM
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="../../img/photo.png" alt=""/>
+                        <p><span>Mark P.</span>add and Image into Worlda <br/>
+                            Today, 10:30 PM
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Menu 1</h3>
+
+                <p>Some content in menu 1.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Menu 2</h3>
+
+                <p>Some content in menu 2.</p>
             </div>
         </div>
-
     </div>
 </div>
+
 
 <!-- jQuery -->
 <script src="../../js/jquery.js"></script>
